@@ -37,5 +37,21 @@ public class JavaPOO {
        System.out.println("La id del alumno 2 es " + alu2.getId());
        System.out.println("El nombre es: " + alu2.getNombre());
        System.out.println("El nombre es: " + alu2.getApellido());
+       
+       
+       
+       
+       
+       
+       // Herencia
+       System.out.println("----------- Herencia ------------");
+       
+       Empleado empl = new Empleado ();
+       
+       empl.getNum_legajo();
+       
+       
+       Consultor consul = new Consultor();
+       
     }
 }
