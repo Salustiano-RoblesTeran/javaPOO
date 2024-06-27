@@ -3,9 +3,9 @@ package com.salu.javapoo;
 public class Alumno {
     
     // Creamos el molde
-    int id;
-    String nombre;
-    String apellido;
+    private int id;
+    private String nombre;
+    private String apellido;
     
     // Metodos constructures: nos permiten crear objetos
 

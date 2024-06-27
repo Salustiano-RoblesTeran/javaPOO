@@ -55,7 +55,7 @@ public class JavaPOO {
        
        
        
-       // Polimorfismo: Permite en un vector guardar distintas clases hijas.
+       // Polimorfismo: Permite en un vector guardar distintas clases hijas.-----------------------
        Persona vector[] = new Persona[5];
        
        vector[0] = new Persona();
@@ -69,6 +69,17 @@ public class JavaPOO {
        pers = cons; // puedo hacer de un hijo a su papa
        
        // cons = pers; // No puedo hacer de un papa a su hijo
+       
+       
+       // Encapsulamiento-----------------------
+       
+       Alumno alu = new Alumno();
+       Alumno al2 = new Alumno(15, "Salustiano", "Robles Teran");
+       
+       System.out.println("Id: " + alu2.getId());
+       System.out.println("Nombre: " + alu2.getNombre());
+       System.out.println("Apellido: " + alu2.getApellido());
+       
        
     }
 }
