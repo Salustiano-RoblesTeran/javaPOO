@@ -53,5 +53,22 @@ public class JavaPOO {
        
        Consultor consul = new Consultor();
        
+       
+       
+       // Polimorfismo: Permite en un vector guardar distintas clases hijas.
+       Persona vector[] = new Persona[5];
+       
+       vector[0] = new Persona();
+       vector[1] = new Empleado();
+       vector[2] = new Consultor();
+       vector[3] = new Jefe();
+       
+       Persona pers = new Persona();
+       Consultor cons = new Consultor();
+       
+       pers = cons; // puedo hacer de un hijo a su papa
+       
+       // cons = pers; // No puedo hacer de un papa a su hijo
+       
     }
 }
