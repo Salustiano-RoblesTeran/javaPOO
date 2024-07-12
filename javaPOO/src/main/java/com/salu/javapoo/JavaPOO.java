@@ -81,5 +81,8 @@ public class JavaPOO {
        System.out.println("Apellido: " + alu2.getApellido());
        
        
+      // CLASE ABSTRACTA
+      
+       
     }
 }

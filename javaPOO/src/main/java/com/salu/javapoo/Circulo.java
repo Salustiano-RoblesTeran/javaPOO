@@ -1,17 +1,17 @@
 package com.salu.javapoo;
 
 
-public class Circulo extends Figura{
+public class Circulo implements Figura, Dibujable{
         
     private double radio;
 
     public Circulo() {
     }
 
-    public Circulo(double radio, double x, double y) {
-        super(x, y);
+    public Circulo(double radio) {
         this.radio = radio;
     }
+    
     
     
     
@@ -21,6 +21,11 @@ public class Circulo extends Figura{
         double pi = 3.14;
         double resultado = pi * radio * radio;
         return resultado;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Hola, estoy dibujando un circulo");
     }
     
 }

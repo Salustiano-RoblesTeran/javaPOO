@@ -1,12 +1,10 @@
 package com.salu.javapoo;
 
 
-public abstract class Figura {
+public interface Figura {
     
     
-    protected double x; // Pos en x
-    protected double y; // Pos en y
     
-    public abstract double calcularArea();
+    public double calcularArea();
     
 }
