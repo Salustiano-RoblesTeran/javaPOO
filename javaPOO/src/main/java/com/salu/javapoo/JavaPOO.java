@@ -4,6 +4,8 @@
 
 package com.salu.javapoo;
 
+import java.util.Stack;
+
 /**
  *
  * @author salu
@@ -83,6 +85,34 @@ public class JavaPOO {
        
       // CLASE ABSTRACTA
       
+      
+      // Pila
+        Stack<Integer> pila = new Stack<Integer>();
+    
+        System.out.println("Pila: " + pila);
+        System.out.println("Esta vacia? " + pila.isEmpty());
+        
+        
+        // Agregar
+        pila.push(1);
+        pila.push(2);
+        pila.push(3);
+        pila.push(4);
+        pila.push(5);
+        
+        
+        // Recorrido
+        for(Integer pilita:pila) {
+            System.out.println(pilita);
+        }
+      
+        // mostrar
+        System.out.println("Pila: " + pila);
+        System.out.println("Esta vacia? " + pila.isEmpty());
+        
+        pila.pop(); // elimina el ultimo registro que entro
+        System.out.println("Esta el 3: " + pila.search(3));
+        System.out.println("Ultimo agregado: " + pila.peek());
        
     }
 }
