@@ -4,6 +4,8 @@
 
 package com.salu.javapoo;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -113,6 +115,43 @@ public class JavaPOO {
         pila.pop(); // elimina el ultimo registro que entro
         System.out.println("Esta el 3: " + pila.search(3));
         System.out.println("Ultimo agregado: " + pila.peek());
+        
+        //! HASHMAP
+        Map<Integer, String> mapaEmpleados = new HashMap<>();
+        
+        mapaEmpleados.put(1523, "Suscribite a todoCode");
+        mapaEmpleados.put(1524, "Salu");
+        mapaEmpleados.put(1525, "Vale");
+        mapaEmpleados.put(1526, "Hola a todos");
+        
+        boolean estaOnoValue = mapaEmpleados.containsValue("Vale");
+        boolean estaOnoKey = mapaEmpleados.containsKey(1523);
+        
+        if (estaOnoValue == true) {
+            System.out.println("El valo buscado esta");
+        } else {
+            System.out.println("El valor buscado no esta");
+        }
+        
+        if (estaOnoKey == true) {
+            System.out.println("El valo buscado esta");
+        } else {
+            System.out.println("El valor buscado no esta");
+        }
+        
+        // Listar todos los valores
+        System.out.println(mapaEmpleados.values());
+        
+        System.out.println(mapaEmpleados.keySet());
+        
+        // Buscar por nombre
+        String nombre = mapaEmpleados.get(1524);
+        
+        System.out.println(nombre);
+        
+        //Elimino
+        mapaEmpleados.remove(1526);
+        
        
     }
 }
